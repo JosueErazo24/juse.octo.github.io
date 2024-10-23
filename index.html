@@ -13,33 +13,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color: rgb(228, 38, 38);">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">MUNICIPIO DE TUPIZA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#attractions">ATRACCIONES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#galeria">GALERIA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body style="background-color: rgb(192, 142, 142);">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -71,34 +45,61 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">MUNICIPIO DE TUPIZA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#attractions">ATRACCIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section id="about">
-        <h2 align="center"> Municipio de Tupiza </h2>
-        <p>Tupiza es una ciudad ubicada en el sur de Bolivia, en el departamento de Potosí. Su historia se remonta a
-            tiempos precolombinos, cuando fue habitada por diversas culturas indígenas, como los tupizas, que dieron
-            nombre a la ciudad.
-        </section>
-
-            Durante la época colonial, Tupiza fue un importante centro de la minería de plata. La llegada de los
-            españoles en el siglo XVI llevó a la explotación de los recursos minerales de la zona.
-        </section>
-            En el siglo XIX, Tupiza ganó notoriedad como el lugar donde se refugiaron los famosos forajidos
-            estadounidenses Butch Cassidy y Sundance Kid, quienes se establecieron en la región después de escapar de la
-            ley en su país. Esta conexión ha hecho que Tupiza sea un destino turístico atractivo, con visitantes
-            interesados ​​en la historia del Viejo Oeste.
-        </section>
-            Hoy en día, Tupiza es conocida por su impresionante paisaje natural, con cañones, montañas y formaciones
-            rocosas. También es un punto de partida para explorar la belleza de la región andina y el altiplano
-            boliviano. Su rica historia y su entorno natural la convierten en un lugar turistico.</p>
-
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Municipio de Tupiza</h2>
+            <p class="text-justify mb-4">
+                Tupiza es una ciudad ubicada en el sur de Bolivia, en el departamento de Potosí. Su historia se remonta a tiempos precolombinos, cuando fue habitada por diversas culturas indígenas, como los tupizas, que dieron nombre a la ciudad.
+            </p>
+            <p class="text-justify mb-4">
+                Durante la época colonial, Tupiza fue un importante centro de la minería de plata. La llegada de los españoles en el siglo XVI llevó a la explotación de los recursos minerales de la zona.
+            </p>
+            <p class="text-justify mb-4">
+                En el siglo XIX, Tupiza ganó notoriedad como el lugar donde se refugiaron los famosos forajidos estadounidenses Butch Cassidy y Sundance Kid, quienes se establecieron en la región después de escapar de la ley en su país. Esta conexión ha hecho que Tupiza sea un destino turístico atractivo, con visitantes interesados ​​en la historia del Viejo Oeste.
+            </p>
+            <p class="text-justify mb-4">
+                Hoy en día, Tupiza es conocida por su impresionante paisaje natural, con cañones, montañas y formaciones rocosas. También es un punto de partida para explorar la belleza de la región andina y el altiplano boliviano. Su rica historia y su entorno natural la convierten en un lugar turístico.
+            </p>
+            <div class="video-container text-center">
+                <video width="100%" height="auto" controls class="rounded shadow">
+                    <source src="./video/Download (1).mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos HTML5.
+                </video>
+            </div>
+        </div>
     </section>
-    <img src="./img/vestimenta antigua varones.jpg" width="300"  height="300">
-
-</section>
+    
 
     <section id="attractions">
-        <div class="row mx-5">
-            <div class="col-4">
+        <div class="row mx-3">
+            <div class="col-12 col-md-4">
                 <div class="card h-100">
                     <div class="card-header">
                         <h2 align="center">El Sillar</h2>
@@ -112,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <div class="card h-100">
                     <div class="card-header">
                         <h2 align="center">La puerta del diablo</h2>
@@ -126,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <div class="card h-100">
                     <div class="card-header">
                         <h2 align="center">Toroyoj</h2>
@@ -139,21 +140,39 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-            </div>      
+            </div>
 
         </div>
 
     </section>
 
-    <section id="galeria">
-        <h2 align="center">Tradiciones</h2>
-        <img src="./img/iglesia.png" alt="Iglesia de Tupiza" width="300"  height="300">
-        <img src="./img/tamal.jpg" alt="iglesia de Cotagaita" width="300"  height="300">
-        <img src="./img/kasauchu.jpg" alt="iglesia de Vitivhi" width="300"  height="300">
-        <img src="./img/caballos.jpg" alt="Tupiza" width="300"  height="300">
-        <img src="./img/carnaval de tupiza.jpg" alt="Villazon" width="300"  height="300">
-        <img src="./img/queso.jpg" alt="Villazon" width="300" height="300">
+    <section id="galeria" class="container my-4">
+        <h2 class="text-center">
+            <span style="color: red;">Tra</span><span style="color: yellow;">di</span><span
+                style="color: green;">ciones</span>
+        </h2>
+        <div class="row">
+            <div class="col-6 col-md-4 mb-3 d-flex justify-content-center align-items-center">
+                <img src="./img/iglesia.png" alt="Iglesia de Tupiza" width="300" height="300">
+            </div>
+            <div class="col-6 col-md-4 mb-3 d-flex justify-content-center align-items-center">
+                <img src="./img/tamal.jpg" alt="Iglesia de Cotagaita" width="300" height="300">
+            </div>
+            <div class="col-6 col-md-4 mb-3 d-flex justify-content-center align-items-center">
+                <img src="./img/kasauchu.jpg" alt="Iglesia de Vitivhi" width="300" height="300">
+            </div>
+            <div class="col-6 col-md-4 mb-3 d-flex justify-content-center align-items-center">
+                <img src="./img/caballos.jpg" alt="Tupiza" width="300" height="300">
+            </div>
+            <div class="col-6 col-md-4 mb-3 d-flex justify-content-center align-items-center">
+                <img src="./img/carnaval de tupiza.jpg" alt="Villazon" width="300" height="300">
+            </div>
+            <div class="col-6 col-md-4 mb-3 d-flex justify-content-center align-items-center">
+                <img src="./img/queso.jpg" alt="Villazon" width="300" height="300">
+            </div>
+        </div>
     </section>
+
 
     <section id="contact">
         <h2 align="center">Contacto</h2>

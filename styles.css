@@ -1,4 +1,27 @@
 .carousel-item img {
-    height: 500px; /* Ajusta este valor según el tamaño deseado */
-    object-fit: cover; /* Esto asegura que la imagen se ajuste sin deformarse */
+    height: 500px;
+    /* Ajusta este valor según el tamaño deseado */
+    object-fit: cover;
+    /* Esto asegura que la imagen se ajuste sin deformarse */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+    /* Cambia el ícono del toggler a blanco */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* Esto hará que el contenedor ocupe toda la altura de la ventana */
 }

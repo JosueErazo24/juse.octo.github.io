@@ -12,6 +12,23 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </head>
+<script>
+    function toggleContent(imageId, textId) {
+        const imageContent = document.getElementById(imageId);
+        const textContent = document.getElementById(textId);
+        const cardFlip = imageContent.closest('.card-flip');
+    
+        if (imageContent.classList.contains('d-none')) {
+            imageContent.classList.remove('d-none');
+            textContent.classList.add('d-none');
+            cardFlip.classList.remove('flip'); // Remove flip effect
+        } else {
+            imageContent.classList.add('d-none');
+            textContent.classList.remove('d-none');
+            cardFlip.classList.add('flip'); // Add flip effect
+        }
+    }
+    </script>
 
 <body style="background-color: rgb(192, 142, 142);">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -153,10 +170,26 @@
         </h2>
         <div class="row">
             <div class="col-6 col-md-4 mb-3 d-flex justify-content-center align-items-center">
-                <img src="./img/iglesia.png" alt="Iglesia de Tupiza" width="300" height="300">
+                <div class="content" id="content1">
+                    <img src="./img/iglesia.png" alt="Iglesia de Tupiza" width="300" height="300" onclick="toggleContent('content1', 'text1')">
+                </div>
+                <div class="content d-none" id="text1">
+                    <p>Esta es la iglesia de Tupiza, conocida por su arquitectura colonial y su historia rica.</p>
+                    <button class="btn btn-secondary" onclick="toggleContent('content1', 'text1')">Volver</button>
+                </div>
             </div>
             <div class="col-6 col-md-4 mb-3 d-flex justify-content-center align-items-center">
-                <img src="./img/tamal.jpg" alt="Iglesia de Cotagaita" width="300" height="300">
+                <div class="card-flip">
+                    <div class="card">
+                        <div class="card-front content" id="content2" onclick="toggleContent('content2', 'text2')">
+                            <img src="./img/tamal.jpg" alt="Iglesia de Cotagaita" width="300" height="300">
+                        </div>
+                        <div class="card-back content d-none" id="text2">
+                            <p>Este es el tamal, un platillo tradicional muy popular en la región.</p>
+                            <button class="btn btn-secondary" onclick="toggleContent('content2', 'text2')">Volver</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-6 col-md-4 mb-3 d-flex justify-content-center align-items-center">
                 <img src="./img/kasauchu.jpg" alt="Iglesia de Vitivhi" width="300" height="300">

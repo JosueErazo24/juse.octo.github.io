@@ -166,3 +166,12 @@ footer {
 .card-flip.flip .card {
     transform: rotateY(180deg); /* Flip the card */
 }
+
+.carousel-inner {
+    height: 400px; /* Ajusta la altura según tus necesidades */
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Esto asegura que la imagen se ajuste correctamente dentro del contenedor */
+}

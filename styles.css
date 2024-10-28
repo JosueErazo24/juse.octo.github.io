@@ -175,3 +175,10 @@ footer {
     height: 100%;
     object-fit: cover; /* Esto asegura que la imagen se ajuste correctamente dentro del contenedor */
 }
+body {
+
+    background: linear-gradient(to right, blue, red); /* Degradado de azul a rojo */
+    color: white !important; /* Color del texto */
+
+   
+}
